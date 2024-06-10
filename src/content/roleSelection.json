@@ -1,0 +1,9 @@
+{
+    "roleSelection": {
+      "title": "Select your role",
+      "description": "Create a new profile by selecting one of the profile types",
+      "buyer": "Buyer",
+      "seller": "Seller"
+    }
+  }
+  
