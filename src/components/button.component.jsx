@@ -1,7 +1,5 @@
-// src/components/Button/Buttons.js
 import styled from "styled-components";
 
-// Primary Button
 export const PrimaryButton = styled.button`
   background-color: rgba(91, 170, 96, 1);
   color: #fff;
@@ -21,7 +19,6 @@ export const PrimaryButton = styled.button`
   }
 `;
 
-// Secondary Button
 export const SecondaryButton = styled.button`
   background-color: transparent;
   color: rgba(91, 170, 96, 1);

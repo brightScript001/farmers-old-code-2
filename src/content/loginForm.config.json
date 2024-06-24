@@ -1,0 +1,15 @@
+{
+  "loginForm": {
+    "loginTitle": "Login to your account",
+    "signupPrompt": "Don’t have an account?",
+    "signupLinkText": "SignUp here",
+    "roleLabel": "Role:",
+    "rolePlaceholder": "Select your role",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "forgotPasswordText": "Forgot password?",
+    "forgotPasswordLinkText": "Click here",
+    "loginButtonText": "Login",
+    "alertNoRole": "Please select a role."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sentEmailPage": {
+    "title": "We sent you an email",
+    "description": "We've sent a secure link to your email address. Just click the link in the email to create a new, strong password.",
+    "troubleFindingEmail": "Didn't see the email?",
+    "troubleFindingEmailDescription": "No worries, it happens! Check your Spam or refresh your email account. If that doesn’t work, click the button below to request a new verification link and we will send it again.",
+    "buttonText": "Password Reset Link"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "signUp": {
+    "createAccount": "Create Account",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "alreadyHaveAccount": "Already have an account?",
+    "passwordCriteria": "Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character",
+    "passwordsDoNotMatch": "Passwords do not match"
+  }
+}

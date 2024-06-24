@@ -3,7 +3,7 @@ import logoImage from "../assets/Onefarm-Tech-Logo 2.png";
 
 const LogoContainer = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
 `;
 
 const LogoImage = styled.img`

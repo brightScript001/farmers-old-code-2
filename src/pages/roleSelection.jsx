@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import "./style.css";
-import Buyer from "../../assets/signup_buyer.png";
-import Seller from "../../assets/signup_seller.png";
-import textContent from "../../content/roleSelection.json";
+import "../styles/roleSelection.css";
+import Buyer from "../assets/signup_buyer.png";
+import Seller from "../assets/signup_seller.png";
+import textContent from "../content/roleSelection.config.json";
 
 const RoleSelection = () => {
   const navigate = useNavigate();
 
   const handleRoleSelection = (role) => {
-    navigate(`/${role.toLowerCase()}signup`);
+    navigate(`/auth/${role.toLowerCase()}-signup`);
   };
 
   const { title, description, buyer, seller } = textContent.roleSelection;

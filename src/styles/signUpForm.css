@@ -1,0 +1,104 @@
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.signup-image {
+  width: 50%;
+}
+
+.signup-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signup-form {
+  width: 50%;
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+}
+
+.signup-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+
+.signup-form p {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.signup-form a {
+  color: rgba(91, 170, 96, 1);
+  text-decoration: none;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-criteria {
+  margin-bottom: 0.9375rem;
+}
+
+.criteria-message {
+  margin: 0.3125rem 0;
+  font-size: 0.75rem;
+  color: red;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+  height: auto;
+}
+
+.criteria-message.valid {
+  color: green;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/signup_buyer.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+
+  .signup-container {
+    padding: 2.5rem;
+  }
+
+  .signup-image {
+    display: none;
+  }
+
+  .signup-form {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}

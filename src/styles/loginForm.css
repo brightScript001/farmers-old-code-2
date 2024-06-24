@@ -1,0 +1,103 @@
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.login-image {
+  width: 50%;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-form {
+  width: 50%;
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1.25rem auto;
+}
+
+.login-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+
+.login-form p {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.login-form a {
+  color: rgba(91, 170, 96, 1);
+  text-decoration: none;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-input {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.role-input label {
+  margin-bottom: 0.3125rem;
+  font-weight: medium;
+}
+
+.role-input select {
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.375rem;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/signup_buyer.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+
+  .login-container {
+    padding: 2.5rem;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    background-color: var(--card-bg-color);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}

@@ -1,0 +1,38 @@
+.input-container {
+  margin-bottom: 15px;
+  position: relative; /* Ensure position relative for absolute positioning of error */
+}
+
+.input-field {
+  width: calc(100% - 30px); /* Adjust width for icon */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #009688;
+}
+
+.input-error {
+  position: absolute;
+  bottom: -20px; /* Adjust as needed */
+  left: 0;
+  font-size: 0.75rem;
+  color: red;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

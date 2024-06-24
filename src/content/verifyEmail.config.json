@@ -1,0 +1,10 @@
+{
+  "verifyEmailPage": {
+    "title": "Verify your email",
+    "intro": "Hi",
+    "welcomeMessage": "We're thrilled to welcome you to the Onefarm Tech community! To access all the amazing features waiting for you, simply verify your email address. We just sent a verification link straight to your inbox. (check your spam folder just in case).",
+    "troubleFindingEmail": "Having trouble finding the email?",
+    "requestNewLink": "No worries! Simply click the button below to request a new verification link.",
+    "buttonText": "Request New Verification Link"
+  }
+}

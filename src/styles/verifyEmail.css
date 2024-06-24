@@ -1,0 +1,53 @@
+.verify-email-container {
+  display: flex;
+  height: 100vh;
+}
+
+.verify-email-image {
+  flex: 1;
+}
+
+.verify-email-image img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.verify-email-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.verify-email-content .logo {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.verify-email-content h2 {
+  margin-bottom: 1rem;
+}
+
+.verify-email-content p {
+  margin-bottom: 1rem;
+}
+
+.verify-email-content p span {
+  font-weight: 600;
+}
+
+.verify-email-content h2 span {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .verify-email-image {
+    display: none;
+  }
+}

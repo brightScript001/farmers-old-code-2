@@ -1,0 +1,11 @@
+{
+  "verifyEmailSuccessPage": {
+    "title": "Email verification successful",
+    "intro": "Hi",
+    "successMessage": "Your email has been verified successfully. We will be redirecting you to login to your dashboard and start buying fresh farm products.",
+    "redirectingMessage": "Redirecting in {countdown}s",
+    "troubleRedirecting": "You have not been redirected yet?",
+    "noWorriesMessage": "No worries! Simply click the button below to login to your account.",
+    "buttonText": "Login"
+  }
+}
