@@ -1,4 +1,6 @@
 import React, { useReducer } from "react";
+import { useNavigate } from "react-router-dom";
+import { useUser } from "../context/UserContext";
 import "../styles/loginForm.css";
 import Input from "./Input";
 import Logo from "../components/Logo.component";
@@ -24,12 +26,32 @@ const reducer = (state, action) => {
 
 const LoginForm = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { setUser } = useUser();
+  const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
     if (state.role === "") {
       alert(textContent.loginForm.alertNoRole);
       return;
+    }
+
+    const users = {
+      Buyer: { email: "buyer@example.com", password: "buyer123" },
+      Seller: { email: "seller@example.com", password: "seller123" },
+    };
+
+    const { email, password, role } = state;
+    if (
+      users[role] &&
+      email === users[role].email &&
+      password === users[role].password
+    ) {
+      setUser({ email, role }); // Set authenticated user in context
+      navigate(`/${role.toLowerCase()}-dashboard`); // Navigate based on role
+    } else {
+      alert("Invalid credentials. Please try again.");
     }
   };
 

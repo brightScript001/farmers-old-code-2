@@ -1,0 +1,28 @@
+.market-insights {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  /* width: 15rem; */
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 37rem;
+}
+
+.market-insights ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.market-insights li {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.market-insights .high {
+  color: green;
+}
+
+.market-insights .low {
+  color: red;
+}

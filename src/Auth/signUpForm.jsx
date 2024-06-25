@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import { useNavigate, Link } from "react-router-dom";
+
 import "../styles/signUpForm.css";
 import Input from "./Input";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -8,6 +9,7 @@ import SellerBg from "../assets/Seller BG.png";
 import BuyerBg from "../assets/Buyer BG.png";
 import textConfig from "../content/signUpForm.json";
 import { PrimaryButton } from "../components/button.component";
+import { useUser } from "../context/UserContext";
 
 const initialState = {
   firstName: "",
@@ -47,6 +49,7 @@ const reducer = (state, action) => {
 
 const SignUpForm = ({ selectedRole }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { setUser } = useUser(); // Use the context to set user data
   const navigate = useNavigate();
 
   const passwordCriteria = [
@@ -101,7 +104,14 @@ const SignUpForm = ({ selectedRole }) => {
       return;
     }
 
-    // If no errors, navigate to verify email page
+    // If no errors, save user data and navigate to verify email page
+    setUser({
+      firstName: state.firstName,
+      lastName: state.lastName,
+      email: state.email,
+      password: state.password,
+    });
+
     navigate("/auth/verify-email", {
       state: { userName: `${state.firstName} ${state.lastName}` },
     });

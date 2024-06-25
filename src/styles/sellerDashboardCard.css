@@ -1,0 +1,33 @@
+.card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-count,
+.card-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #888;
+}
+
+.revenue-card {
+  background-color: #e0ffe0;
+  border: 1px solid #4caf50;
+}
+
+.revenue-card .card-title {
+  color: #4caf50;
+}

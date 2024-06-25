@@ -1,0 +1,17 @@
+{
+  "pendingOrders": {
+    "title": "Pending Orders",
+    "count": "174",
+    "subtitle": "28% increase from last month"
+  },
+  "settledOrders": {
+    "title": "Settled Orders",
+    "count": "882",
+    "subtitle": "82% customer satisfaction"
+  },
+  "revenue": {
+    "title": "Your revenue",
+    "amount": "N4,331,912",
+    "subtitle": "17% increase"
+  }
+}
