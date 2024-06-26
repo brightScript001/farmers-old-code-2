@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/passwordResetSuccessPage.css";
 import Logo from "../components/Logo.component";
@@ -15,7 +15,7 @@ const PasswordResetSuccessPage = () => {
       if (redirectTimer > 0) {
         setRedirectTimer(redirectTimer - 1);
       } else {
-        navigate("/login");
+        navigate("/auth/login");
       }
     }, 1000);
 

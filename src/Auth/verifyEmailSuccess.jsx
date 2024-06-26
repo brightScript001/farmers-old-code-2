@@ -9,7 +9,7 @@ import { PrimaryButton } from "../components/button.component";
 const VerifyEmailSuccessPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { userName } = location.state || { usesrName: "User" };
+  const { userName } = location.state || { userName: "User" };
   const [countdown, setCountdown] = useState(40);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const VerifyEmailSuccessPage = () => {
     }, 1000);
 
     const redirectTimer = setTimeout(() => {
-      navigate("/login");
+      navigate("/auth/login");
     }, 40000);
 
     return () => {
