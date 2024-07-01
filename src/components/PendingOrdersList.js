@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/PendingOrderList.css";
 import config from "../content/PendingOrderList.config.json";
-import { SecondaryButton } from "../components/button.component";
+import { SecondaryButton } from "../components/button";
 
 const PendingOrdersList = () => {
   const { orders } = config.pendingOrdersList;

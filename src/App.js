@@ -1,21 +1,25 @@
-import React from 'react';
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { UserProvider } from './context/UserContext';
+import Spinner from './components/fullPageSpinner';
 
-import RoleSelection from './pages/roleSelection';
-import AuthRoutes from './routes/AuthRoutes';
-import SellerDashboard from './pages/sellerDashboard'
-import BuyerDashboard from './pages/buyerDashboard';
+// Lazy load the components
+const RoleSelection = lazy(() => import('./pages/roleSelection'));
+const AuthRoutes = lazy(() => import('./routes/AuthRoutes'));
+const SellerDashboard = lazy(() => import('./pages/sellerDashboard'));
+const BuyerDashboard = lazy(() => import('./pages/buyerDashboard'));
 
 function App() {
   return (
     <UserProvider>
-      <Routes>
-        <Route path="/" element={<RoleSelection />} />
-        <Route path="seller-dashboard" element={<SellerDashboard />} />
-        <Route path="buyer-dashboard" element={<BuyerDashboard />} />
-        <Route path="/auth/*" element={<AuthRoutes />} />
-      </Routes>
+      <Suspense fallback={<Spinner />}>
+        <Routes>
+          <Route path="/" element={<RoleSelection />} />
+          <Route path="seller-dashboard" element={<SellerDashboard />} />
+          <Route path="buyer-dashboard" element={<BuyerDashboard />} />
+          <Route path="/auth/*" element={<AuthRoutes />} />
+        </Routes>
+      </Suspense>
     </UserProvider>
   );
 }

@@ -4,11 +4,11 @@ import { useNavigate, Link } from "react-router-dom";
 import "../styles/signUpForm.css";
 import Input from "./Input";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import SellerBg from "../assets/Seller BG.png";
 import BuyerBg from "../assets/Buyer BG.png";
 import textConfig from "../content/signUpForm.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 import { useUser } from "../context/UserContext";
 
 const initialState = {
@@ -209,9 +209,8 @@ const SignUpForm = ({ selectedRole }) => {
                 {validatePassword(state.password).map((criteria, index) => (
                   <p
                     key={index}
-                    className={`criteria-message ${
-                      criteria.isValid ? "valid" : "invalid"
-                    }`}
+                    className={`criteria-message ${criteria.isValid ? "valid" : "invalid"
+                      }`}
                   >
                     {criteria.message}
                   </p>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../components/Logo.component';
+import Logo from '../components/Logo';
 import sidebarConfig from '../content/sideBar.config';
 import '../styles/sideBar.css';
 

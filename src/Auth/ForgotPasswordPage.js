@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/ForgotPasswordPage.css";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import forgotPasswordConfig from "../content/forgotPasswordConfig.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const ForgotPasswordPage = () => {
   const [email, setEmail] = useState("");

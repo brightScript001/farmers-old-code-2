@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/passwordResetSuccessPage.css";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import SentEmailImage from "../assets/Buyer BG.png";
 import passwordResetSuccessConfig from "../content/passwordResetSuccessConfig.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const PasswordResetSuccessPage = () => {
   const navigate = useNavigate();

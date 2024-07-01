@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import SentEmailImage from "../assets/VerifyEmail.png";
 import "../styles/resetPassword.css";
 import resetPasswordConfig from "../content/resetPassword.config.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const ResetPasswordPage = () => {
   const navigate = useNavigate();

@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/sentEmail.css";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import SentEmailImage from "../assets/Buyer BG.png";
 import sentEmailConfig from "../content/sentEmailConfig.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const SentEmailPage = () => {
   const navigate = useNavigate("/reset-password");

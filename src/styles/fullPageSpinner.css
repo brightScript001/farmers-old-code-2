@@ -1,0 +1,41 @@
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 12px solid #f9f9f9;
+  border-top: 12px solid green;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite, changeColor 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  0%,
+  50% {
+    border-top-color: green;
+  }
+  50.1%,
+  100% {
+    border-top-color: gray;
+  }
+}

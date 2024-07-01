@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
 import "../styles/loginForm.css";
 import Input from "./Input";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import SellerBg from "../assets/Seller BG.png";
 import BuyerBg from "../assets/Buyer BG.png";
 import textContent from "../content/loginForm.config.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const initialState = {
   email: "",

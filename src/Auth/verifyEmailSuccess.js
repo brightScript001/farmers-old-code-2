@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../styles/verifyEmailSuccess.css";
-import Logo from "../components/Logo.component";
+import Logo from "../components/Logo";
 import emailImage from "../assets/VerifyEmail.png";
 import textContent from "../content/verifyEmailSuccess.config.json";
-import { PrimaryButton } from "../components/button.component";
+import { PrimaryButton } from "../components/button";
 
 const VerifyEmailSuccessPage = () => {
   const navigate = useNavigate();
